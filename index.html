@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>font cycling</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./cycling.js"></script>
+  </head>
+  <style>
+    .one {
+      font-family: "Helvetica";
+      background-color: blue;
+    }
+    .two {
+      font-family: "Times New Roman";
+      background-color: red;
+    }
+    .three {
+      font-family: "Helvetica";
+      background-color: pink;
+    }
+    .three {
+      font-family: "Caslon";
+      background-color: orangered;
+    }
+    h2 {
+      font-size: 72px;
+    }
+    .textDiv {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="textDiv">
+      <h2 id="holder" class="one">WORD</h2>
+      <p>The queue length is: <span></span></p>
+    </div>
+  </body>
+</html>
