@@ -3,25 +3,25 @@ $(document).ready(function() {
   var maxCycles = 10;
   var counterObj = 0;
 
-  function thirdChange() {
-    if (counterObj <= maxCycles) {
-      element.removeClass("three").addClass("four");
-      $("span").html(counterObj);
-      console.log(counterObj);
-    }
-  }
   function secondChange() {
-    if (counterObj <= maxCycles) {
-      element.removeClass("two").addClass("three");
-      setTimeout(secondChange, 100);
+    if (counterObj < maxCycles) {
       counterObj++;
+      element.removeClass("two").addClass("one");
+      setTimeout(redToBlue, 100);
       console.log(counterObj);
+    } else {
+      console.log("Done");
     }
   }
   function redToBlue() {
-    element.removeClass("one").addClass("two");
-    setTimeout(secondChange, 100);
-    counterObj += 1;
+    if (counterObj < maxCycles) {
+      counterObj++;
+      element.removeClass("one").addClass("two");
+      setTimeout(secondChange, 100);
+      console.log(counterObj);
+    } else {
+      console.log("Done");
+    }
   }
 
   // blueToRed();
