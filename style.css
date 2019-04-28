@@ -1,3 +1,22 @@
 .one {
-  background: yellow;
+  font-family: "Helvetica";
+  background-color: blue;
+}
+.two {
+  font-family: "Times New Roman";
+  background-color: red;
+}
+.three {
+  font-family: "Helvetica";
+  background-color: pink;
+}
+.three {
+  font-family: "Caslon";
+  background-color: orangered;
+}
+h2 {
+  font-size: 72px;
+}
+.textDiv {
+  text-align: center;
 }
